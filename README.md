@@ -1,6 +1,6 @@
-#Roshambo (Rock, Paper, Scissors App)
+# Roshambo (Rock, Paper, Scissors Command Line Application)
 ---
-####Create a game of Roshambo (rock, paper, scissors) which can be played on the command line. Separate functionality into multiple classes. When you run the script, it should do something like the following:
+#### This is a game of Roshambo (rock, paper, scissors) which can be played on the command line. When you run the script, it should do something like the following:
 
 ```
 $ node main.js --move=rock
@@ -10,4 +10,4 @@ Computer plays paper!
 ~Computer wins.~
 ```
 
-The yargs package is required to run this game.
+#### The yargs package is required to run this game.
