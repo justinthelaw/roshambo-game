@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/justinthelaw/Roshambo#readme",
   "dependencies": {
+    "chalk": "^4.1.1",
     "yargs": "^17.0.1"
   },
   "bin": {
