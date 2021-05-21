@@ -7,6 +7,6 @@
 ```js
 npm install             //Do this from the root of the Roshambo folder.
 roshambo --move <move>  //Where <move> is rock, paper, or scissors.
-<result>                //Where <result> is the final outcome.
-                        //The <result> comes with some fun messages and emojis!
+<prints result>         //Where <print result> is the calculated final outcome.
+                        //The <print result> comes with some fun messages and emojis!
 ```

@@ -13,9 +13,6 @@ class Moves {
 
   static choiceStack = ['ROCK', 'PAPER', 'SCISSORS'];
 
-  constructor () {
-  }
-
   static getPlayerMove() {
     const options = yargs
       .usage("Usage: --move <move>")
@@ -38,25 +35,22 @@ class Moves {
 
 class Roshambo {
 
-  static computerMove = Moves.computerMove();
   static resultStack = [
     ['t', 'c', 'p'],
     ['p', 't', 'c'],
     ['c', 'p', 't']
   ];
+
   static resultMap = {
     't': 'YOU TIED! 😒',
     'p': 'YOU WON! 🎉',
     'c': 'Looks like the AI built into this game has beaten you as expected! 🤖'
   }
 
-  constructor() {
-  }
-
   static playGame(playerInput) {
     console.clear();
     console.log(ch('Welcome to the Roshambo Game!'))
-    Roshambo.computeResult(Moves.getPlayerMove(), Roshambo.computerMove)
+    Roshambo.computeResult(Moves.getPlayerMove(), Moves.computerMove())
   }
 
   static computeResult (playerMove, computerMove) {
@@ -72,10 +66,8 @@ class Roshambo {
         let result = Roshambo.resultStack[playerMoveIndex][computerMoveIndex];
         let resultMsg = Roshambo.resultMap[result]
         console.log('Result: '+ yh(resultMsg) + '\n');
-        //console.log(yh(resultMap[result]) +'\n');
       }, 1000 );
     }
-
   }
 }
 
