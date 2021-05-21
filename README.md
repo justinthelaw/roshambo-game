@@ -1,6 +1,6 @@
 # Roshambo (Rock, Paper, Scissors Command Line Application)
 
-#### The yargs and chalk packages are required to run this game and should be installed after running npm install.
+#### The *yargs* and *chalk* packages are required to run this game and should be installed after running npm install.
 
 #### This is a game of Roshambo (rock, paper, scissors) which can be played on the command line. Functionality is separated into multiple classes. Do the following to install and run the script:
 
